@@ -6,36 +6,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Lantern Design</title>
-    <link rel="stylesheet" href="css/ex1_bootstarp.css">
+    <link rel="stylesheet" href="css/ex1_bs5.css">
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 </head>
 
 <body>
 
     <header id="masthead" class="container">
-        
         <img class="float-start" src="images\rl_logo.png" alt="">
         <nav class="navbar navbar-expand-md float-end mt-4">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" bg-light><span class="navbar-toggler-icon"></span> </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="bi bi-x-diamond "></span></button>
             <div id="menu" class="collapse navbar-collapse">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="ex1.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#content">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html" target="_blank">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="ex1.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#content">Services</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="portfolio.html" target="_blank">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <article id="mainContent" class="container">
         <section id="titleBar">
-            <img class="w-100" src="images/tokyo.jpg" alt="Tokyo building">
+         <!-- Carousel -->
+<div id="sliderbar" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#sliderbar" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#sliderbar" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#sliderbar" data-bs-slide-to="2"></button>
+    </div>
+  
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/shiba_inu_14.jpg" alt="Los Angeles" class="mx-auto d-block img-fluid">
+      </div>
+      <div class="carousel-item">
+        <img src="images/tokyo.jpg" alt="Chicago" class="mx-auto d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="images/beagle_3.jpg" alt="New York" class="mx-auto d-block img-fluid">
+      </div>
+    </div>
+  
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#sliderbar" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#sliderbar" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+            <!--<img class="w-100" src="images/tokyo.jpg" alt="Tokyo building">-->
             <h1>Red Lantern </h1>
         </section>
-        <section id="content">
+        <section id="content" class="col-md-6 col-12">
             <h2>Welcome to the new Red Lantern Design</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, quidem. Optio corrupti veniam cum,
                 reprehenderit architecto consequuntur in distinctio fugiat ipsam, repudiandae consequatur! Quisquam,
@@ -48,14 +79,17 @@
                 <li><a href="contact.html">Contact Red Lantern</a></li>
             </ul>
         </section>
-        <section id="sidebar">
+        <section id="sidebar" class="col-md-6 col-12">
             <h2>Our Work 紅燈籠</h2>
-            <ul id="port">
-                <li><img src="images/markinjapan.jpg" width="200px" alt=""></li>
-                <li><img src="images/a2g.jpg" alt=""></li>
-                <li><img src="images/foobar.jpg" alt=""></li>
-                <li><img src="images/rpm.jpg" alt=""></li>
-            </ul>
+
+            <div id="port" class="p-3 row">
+                <div><img class="img-fluid col-md-4 col-sm-6 col-12" src="images/markinjapan.jpg" width="200px" alt=""></div>
+                <div><img class="img-fluid col-md-4 col-sm-6 col-12" src="images/a2g.jpg" alt=""></div>
+                <div><img class="img-fluid col-md-4 col-sm-6 col-12" src="images/foobar.jpg" alt=""></div>
+                <div><img class="img-fluid col-md-4 col-sm-6 col-12" src="images/rpm.jpg" alt=""></div>
+                <div><img class="img-fluid col-md-4 col-sm-6 col-12" src="images/beagle_1.jpg" alt=""></div>
+                <div><img class="img-fluid col-md-4 col-sm-6 col-12" src="images/shiba_inu_6.jpg" alt=""></div>
+                </div>
         </section>
         <footer>
             <p>Copyright &copy; Red Lantern Design, all right reserved.</p>
